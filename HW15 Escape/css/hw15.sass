@@ -1,0 +1,521 @@
+h1, h2, h3, dl, dd, p, ul, fieldset, input, figure
+  padding: 0
+  margin: 0
+  -webkit-margin-before: 0
+  -webkit-margin-after: 0
+  -webkit-margin-start: 0
+  -webkit-padding-start: 0
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+ul
+  list-style: none
+
+*:focus
+  outline: none
+
+@mixin bord-rad ($br)
+  -webkit-border-radius: $br
+  -moz-border-radius: $br
+  border-radius: $br
+
+@mixin  bg-size ($bgs)
+  -webkit-background-size: $bgs
+  -moz-background-size: $bgs
+  -o-background-size: $bgs
+  background-size: $bgs
+
+@mixin button ($w,$h,$fs, $pdng, $clr, $bgclr)
+  width: $w
+  height: $h
+  padding-top: $pdng
+  text-align: center
+  background-color: $bgclr
+  a
+    font-size: $fs
+    color: $clr
+    text-decoration: none
+
+
+
+
+body
+  font-family: "BrandonGrotesque" sans-serifs
+  color: #000
+
+.welcome
+  min-height: 620px
+  background: url("../img/welcome-bg.png") no-repeat
+  @include bg-size(cover)
+  overflow: hidden
+  .header
+    height: 29px
+    margin: 43px 0 159px
+    .navbar-inverse
+      background: none
+    h1
+      text-indent: -9999px
+      font-size: 0
+    .logo
+      float: left
+      overflow: hidden
+    #navbar
+      -webkit-box-shadow: none
+      -webkit-box-shadow: none
+      -moz-box-shadow: none
+      box-shadow: none
+      .header-nav
+        margin-top: 11px
+        float: right
+        li
+          display: inline-block
+          margin-left: 30px
+          a
+            color: #ffffff
+            font-size: 18px
+            font-weight: 500
+            text-decoration: none
+  .slogan-part1
+    margin-bottom: 41px
+    color: white
+    font-size: 32px
+    font-weight: 300
+    text-align: center
+  .slogan-part2
+    margin-bottom: 69px
+    color: white
+    font-size: 66px
+    font-weight: 700
+    text-transform: uppercase
+    text-align: center
+  .welcome-button
+    display: block
+    margin: 0 auto
+    @include button (240px,65px,23px, 15px, #ffffff, transparent)
+    border: 2px solid #ffffff
+    @include bord-rad(4px)
+    padding: 0
+    a
+      font-weight: 700
+    &:hover
+      opacity: 0.5
+
+.web-development, .identity-branding
+  padding: 100px 40px
+  overflow: hidden
+  h2
+    color: #222
+    font-size: 60px
+    line-height: 75px
+    margin-bottom: 35px
+    span
+      font-weight: bold
+  article
+    color: #777
+    font-size: 18px
+    font-weight: 400
+    line-height: 24px
+    p:first-child
+      margin-bottom: 35px
+
+.web-development
+  background: url("../img/web-dev-bg.png") no-repeat
+  background-position: 75% 50%
+  article
+    float: left
+
+.identity-branding
+  background: url("../img/identity-branding-bg.png") no-repeat
+  background-color: #fafafa
+  background-position: 20% 50%
+  .identity-branding-wrap
+    float: right
+
+.content-menu
+  padding: 100px 0
+  overflow: hidden
+  li
+    min-height: 100px
+    position: relative
+    overflow: hidden
+    margin-bottom: 50px
+    a
+      text-decoration: none
+    h3
+      color: #222
+      font-size: 22px
+      font-weight: 500
+      margin-left: 90px
+    p
+      color: #777
+      font-size: 18px
+      font-weight: 400
+      line-height: 18px
+      margin: 10px 0 0 90px
+    &:before
+      content: ""
+      width: 70px
+      height: 70px
+      @include bord-rad(35px)
+      background-color: #000000
+      position: absolute
+      top: 0
+      left: 0
+    &:nth-child(5), &:nth-child(6)
+      margin-bottom: 0
+    &:nth-child(1):after, &:nth-child(2):after, &:nth-child(3):after, &:nth-child(4):after, &:nth-child(5):after, &:nth-child(6):after
+      position: absolute
+    &:nth-child(1):after
+      content: url("../img/person-icon.png")
+      left: 25px
+      top: 12px
+    &:nth-child(2):after
+      content: url("../img/browser-icon.png")
+      left: 17px
+      top: 19px
+    &:nth-child(3):after
+      content: url("../img/ipad-icon.png")
+      left: 18px
+      top: 18px
+    &:nth-child(4):after
+      content: url("../img/video-icon.png")
+      left: 17px
+      top: 23px
+    &:nth-child(5):after
+      content: url("../img/star-icon.png")
+      left: 16px
+      top: 16px
+    &:nth-child(6):after
+      content: url("../img/camera.png")
+      left: 19px
+      top: 20px
+
+.awesome-clients
+  padding: 100px 0
+  background-color: #fafafa
+  overflow: hidden
+  h2
+    color: #222
+    font-size: 60px
+    font-weight: 300
+    margin-bottom: 18px
+    text-align: center
+    span
+      font-weight: 700
+  .clients-slogan
+    color: #777
+    font-size: 22px
+    font-weight: 400
+    margin-bottom: 40px
+    text-align: center
+  .client1
+    margin-bottom: 40px
+    overflow: hidden
+    position: relative
+    .image-wrapper
+      height: 234px
+      width: 234px
+      border: 7px solid #ffffff
+      @include bord-rad(50%)
+      background-color: #010101
+      float: left
+    .quote-wrapper
+      margin: 35px 0 0 38px
+      float: left
+      width: 640px
+      height: 176px
+      border: 1px solid #e8e8e8
+      background-color: #ffffff
+      padding: 40px 0 0 75px
+      .client-quote
+        color: #777
+        font-size: 26px
+        font-weight: 400
+        line-height: 28px
+      .client-name
+        margin: 13px 0 0 6px
+        color: #7690c5
+        font-size: 20px
+        font-weight: 400
+        line-height: 36px
+    .quote-wrapper:before
+      content: ""
+      position: absolute
+      top: 112px
+      left: 254px
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 11.5px 19px 11.5px 0
+      border-color: transparent #e8e8e8 transparent transparent
+    .quote-wrapper:after
+      content: ""
+      position: absolute
+      top: 112px
+      left: 255px
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 11.5px 19px 11.5px 0
+      border-color: transparent #ffffff transparent transparent
+  .client2
+    overflow: hidden
+    position: relative
+    .quote-wrapper
+      margin: 35px 0 0 34px
+      float: left
+      width: 640px
+      height: 176px
+      border: 1px solid #e8e8e8
+      background-color: #ffffff
+      padding: 40px 0 0 75px
+      .client-quote
+        color: #777
+        font-size: 26px
+        font-weight: 400
+        line-height: 28px
+      .client-name
+        margin: 13px 0 0 6px
+        color: #7690c5
+        font-size: 20px
+        font-weight: 400
+        line-height: 36px
+    .quote-wrapper:before
+      content: ""
+      position: absolute
+      top: 112px
+      left: 674px
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 11.5px 0 11.5px 19px
+      border-color: transparent transparent transparent #e8e8e8
+    .quote-wrapper:after
+      content: ""
+      position: absolute
+      top: 112px
+      left: 672px
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 11.5px 0 11.5px 19px
+      border-color: transparent transparent transparent #ffffff
+    .image-wrapper
+      height: 234px
+      width: 234px
+      border: 7px solid #ffffff
+      @include bord-rad(50%)
+      background-color: #010101
+      float: left
+      margin-left: 30px
+
+.links
+  padding: 60px 0
+  overflow: hidden
+  ul
+    text-align: center
+    li
+      padding: 0 20px
+      display: inline-block
+      img
+        width: 100%
+        height: auto
+        vertical-align: middle
+      &:nth-child(1)
+        margin-top: 9px
+      &:nth-child(2)
+        margin-top: 9px
+      &:nth-child(3)
+        margin-top: 0
+      &:nth-child(4)
+        margin-top: 8px
+      a:hover
+        position: relative
+        top: 3px
+
+.team
+  padding: 100px 50px
+  background-color: #000000
+  overflow: hidden
+  h2
+    color: #ffffff
+    font-size: 60px
+    font-weight: 300
+    margin-bottom: 18px
+    text-align: center
+    span
+      font-weight: 700
+  .team-slogan
+    color: #ffffff
+    font-size: 22px
+    font-weight: 400
+    margin-bottom: 73px
+    text-align: center
+  ul
+    text-align: center
+    overflow: hidden
+    margin-bottom: 50px
+    li
+      padding: 0
+      display: inline-block
+      text-align: center
+      .image-wrapper
+        height: 234px
+        width: 234px
+        border: 7px solid #ffffff
+        @include bord-rad(50%)
+        background-color: #010101
+        margin: 0 auto 23px
+        img
+          width: 100%
+          height: 100%
+      h3
+        color: #ffffff
+        font-size: 18px
+        font-weight: 700
+        margin-bottom: 10px
+      .prof
+        color: #ebebeb
+        font-size: 16px
+        font-weight: 400
+        margin-bottom: 10px
+      ul
+        margin: 0 auto
+        li
+          display: inline-block
+          vertical-align: top
+          .social-links-wrapper
+            height: 41px
+            width: 40px
+            border: 3px solid #ffffff
+            @include bord-rad(50%)
+            margin: 0 5px
+            a
+              color: transparent
+              display: block
+              height: 100%
+          .twitter
+            background: url("../img/sprite.png") 8px 10px no-repeat
+          .facebook
+            background: url("../img/sprite.png") -17px 9px no-repeat
+          .pinterest
+            background: url("../img/sprite.png") -41px 8px no-repeat
+          .google-plus
+            background: url("../img/sprite.png") -67px 10px no-repeat
+  .comment
+    color: #ebebeb
+    font-size: 20px
+    font-weight: 400
+    margin: 0 auto
+    text-align: center
+
+.footer
+  background-color: #7690c5
+  overflow: hidden
+  .footer-content
+    padding: 100px 0
+    overflow: hidden
+    .contacts
+      padding: 0
+      .contact-title
+        color: #ffffff
+        font-size: 60px
+        font-weight: 300
+        margin-bottom: 17px
+        span
+          font-weight: 700
+      .contact-slogan
+        color: #ffffff
+        font-size: 18px
+        font-weight: 400
+        margin-bottom: 54px
+        padding: 0
+      ul
+        li
+          color: #ffffff
+          font-size: 18px
+          font-weight: 400
+          padding-left: 40px
+          position: relative
+          padding-right: 0
+          margin-bottom: 50px
+          &:before
+            content: ""
+            position: absolute
+            top: 0
+            left: 10px
+          &:nth-child(1)
+            background: url("../img/mobile-icon.png") no-repeat
+          &:nth-child(2)
+            background: url("../img/mail-icon.png") no-repeat
+          &:nth-child(3)
+            background: url("../img/twitter-icon.png") no-repeat
+          &:nth-child(4)
+            background: url("../img/facebook-icon.png") no-repeat
+          &:nth-child(5)
+            background: url("../img/google-icon.png") no-repeat
+          &:nth-child(6)
+            background: url("../img/pinterest-icon.png") no-repeat
+    .input-small
+      width: 457px
+      height: 52px
+      background-color: #ffffff
+      border: 1px solid #ccc
+      @include bord-rad(2px)
+      padding-left: 21px
+      font-size: 18px
+      font-weight: 500
+      margin-bottom: 27px
+    .input-big
+      width: 456px
+      height: 211px
+      background-color: #ffffff
+      border: 1px solid #ccc
+      @include bord-rad(2px)
+      font-size: 18px
+      font-weight: 500
+  .footer-address
+    overflow: hidden
+    color: #ffffff
+    font-size: 16px
+    font-weight: 500
+    line-height: 22px
+    clear: both
+    text-align: center
+
+
+@import "tablet_hw15.sass"
+@import "mobile_hw15.sass"
+@import "desktop_hw15.sass"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

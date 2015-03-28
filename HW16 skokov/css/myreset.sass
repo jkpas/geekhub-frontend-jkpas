@@ -1,0 +1,40 @@
+h1, h2, h3, dl, dd, p, ul, fieldset, input, figure
+  padding: 0
+  margin: 0
+  -webkit-margin-before: 0
+  -webkit-margin-after: 0
+  -webkit-margin-start: 0
+  -webkit-padding-start: 0
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+ul
+  list-style: none
+
+*:focus
+  outline: none
+
+@mixin bord-rad ($br)
+  -webkit-border-radius: $br
+  -moz-border-radius: $br
+  border-radius: $br
+
+@mixin  bg-size ($bgs)
+  -webkit-background-size: $bgs
+  -moz-background-size: $bgs
+  -o-background-size: $bgs
+  background-size: $bgs
+
+@mixin button ($w,$h,$fs, $pdng, $clr, $bgclr)
+  width: $w
+  height: $h
+  padding-top: $pdng
+  text-align: center
+  background-color: $bgclr
+  a
+    font-size: $fs
+    color: $clr
+    text-decoration: none

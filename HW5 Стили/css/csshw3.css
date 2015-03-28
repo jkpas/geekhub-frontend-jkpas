@@ -1,0 +1,175 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font: 0.55em serif;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+
+h1 {
+    font-size: 220%;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-size: 150%;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+fieldset {
+    width: 460px;
+    margin-bottom: 15px;
+    border: 1px solid #BEBEBE;
+    padding-left: 5px;
+    padding-bottom: 15px;
+}
+
+legend {
+    font-size: 110%;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+p {
+    font-size: 100%;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.namefamily {
+    border: 1px inset #D3D3D3;
+    color: #000000;
+    padding: 3px;
+    margin-top: 12px;
+    margin-bottom: 2px;
+    font-size: 11px;
+    width: 150px;
+    height: 4px;
+}
+
+.radio {
+    width: 9px;
+    height: 9px;
+}
+
+.pol {
+    margin-top: 6px;
+    margin-bottom: 9px;
+}
+
+.vozrast {
+    margin-top: 9px;
+}
+
+.age {
+    width: 30px;
+    height: 8px;
+    font-size: 11px;
+    border: 1px inset #D3D3D3;
+    color: #000000;
+}
+
+.osebe {
+    width: 80px;
+    height: 12px;
+    border: 1px inset #D3D3D3;
+    color: #000000;
+}
+
+.cbox {
+    width: 9px;
+    height: 9px;
+}
+
+.menu1 {
+    width: 100px;
+    height: 12px;
+    font-size: 9px;
+}
+
+.komentarii {
+    height: 90px;
+    width: 250px;
+    border: 1px inset #D3D3D3;
+    color: #000000;
+    margin-top: -10px;
+}
+
+.menu2 {
+    width: 100px;
+    height: 38px;
+    font-size: 9px;
+    margin-top: 10px;
+}
+
+.vvedendovas {
+    height: 8px;
+    width: 160px;
+    border: 1px inset #BEBEBE;
+    color: #696969;
+    margin-top: -8px;
+    font-size: 8px;
+}
+
+.emailtext {
+    font-size: 100%;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+.email {
+    border: 1px inset #D3D3D3;
+    color: #000000;
+    margin-bottom: 2px;
+    font-size: 8px;
+    width: 160px;
+    height: 8px;
+}
+
+.kategorii {
+    font-size: 100%;
+    font-style: italic;
+    margin-top: -7px;
+    margin-bottom: 10px;
+}
+
+button {
+    font-size: 90%;
+    width: 60px;
+    height: 16px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}

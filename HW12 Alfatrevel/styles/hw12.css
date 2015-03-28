@@ -1,0 +1,801 @@
+h1, h2, h3, dl, dd, p, ul, fieldset, input {
+  padding: 0;
+  margin: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-padding-start: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: "OpenSans", "Myriad Pro" sans-serifs; }
+
+.header {
+  min-width: 1900px;
+  height: 90px;
+  background-color: #0a0b26; }
+  .header .content-center {
+    width: 1024px;
+    padding: 0 23px 0 16px;
+    margin: 0 auto; }
+    .header .content-center .logo {
+      float: left;
+      margin-top: 30px; }
+      .header .content-center .logo h1 {
+        display: none; }
+    .header .content-center .header-nav {
+      margin: 20px 0 0 80px;
+      list-style-image: url("../img/list-style-image.gif");
+      float: left; }
+      .header .content-center .header-nav li:hover {
+        padding-left: 10px; }
+      .header .content-center .header-nav a {
+        text-decoration: none;
+        font-size: 15px;
+        color: #ffffff; }
+    .header .content-center aside {
+      float: right;
+      width: 417px;
+      height: 90px;
+      padding-top: 20px; }
+      .header .content-center aside .phone-number {
+        color: #ffffff;
+        font-weight: bold;
+        float: left;
+        margin-top: 5px; }
+        .header .content-center aside .phone-number .phone-number1 {
+          font-size: 15px; }
+        .header .content-center aside .phone-number .phone-number2 {
+          font-size: 20px; }
+      .header .content-center aside .header-button {
+        float: right;
+        width: 167px;
+        height: 75px; }
+        .header .content-center aside .header-button a {
+          display: block;
+          width: 167px;
+          height: 50px;
+          font-size: 15px;
+          padding-top: 16px;
+          text-align: center;
+          text-decoration: none;
+          color: #ffffff;
+          background-color: #e35353;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+          font-weight: bold;
+          border-bottom: 6px solid #c74848; }
+          .header .content-center aside .header-button a:hover {
+            height: 44px;
+            border-bottom: 0;
+            margin-top: 6px; }
+      .header .content-center aside .but {
+        display: inline-block;
+        color: #77777e;
+        margin: 12px 0 0 30px;
+        font-size: 14px; }
+      .header .content-center aside .phone-slogan {
+        display: block;
+        color: #bebec1;
+        margin: 5px 0 0 55px;
+        font-size: 12px; }
+
+.israel {
+  min-width: 1900px;
+  height: 500px;
+  background-image: url("../img/bg-israel.gif");
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover; }
+  .israel .content-center {
+    width: 1024px;
+    padding: 0 23px 0 23px;
+    margin: 0 auto; }
+    .israel .content-center .israel-content {
+      width: 600px;
+      height: 500px;
+      float: left; }
+      .israel .content-center .israel-content .p1 {
+        font-weight: bold;
+        color: #ffffff;
+        margin-top: 65px;
+        font-size: 36px; }
+        .israel .content-center .israel-content .p1 .span1 {
+          display: inline-block;
+          color: #1c1d27;
+          background-color: #f5e525;
+          padding: 10px 15px 7px; }
+      .israel .content-center .israel-content .p2 {
+        font-weight: bold;
+        color: #ffffff;
+        margin-top: 15px;
+        font-size: 32px; }
+        .israel .content-center .israel-content .p2 .span2 {
+          font-weight: lighter; }
+      .israel .content-center .israel-content ul {
+        margin: 20px 0 0 30px;
+        list-style-image: url("../img/list-style-image2.gif");
+        color: #ffffff; }
+        .israel .content-center .israel-content ul li {
+          margin-bottom: 5px;
+          font-size: 25px; }
+      .israel .content-center .israel-content a {
+        display: block;
+        width: 235px;
+        height: 65px;
+        font-size: 18px;
+        padding-top: 20px;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: transparent;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        font-weight: bold;
+        border: 1px solid #ffffff;
+        margin-top: 40px; }
+        .israel .content-center .israel-content a:hover {
+          height: 60px;
+          margin-top: 45px; }
+    .israel .content-center .israel-form-wrapper {
+      width: 359px;
+      height: 500px;
+      float: right; }
+      .israel .content-center .israel-form-wrapper .israel-form {
+        padding: 35px 43px 0;
+        height: 430px;
+        width: 359px;
+        margin-top: 40px;
+        background-color: #1f2357;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px; }
+        .israel .content-center .israel-form-wrapper .israel-form p {
+          text-align: center;
+          font-size: 23px;
+          color: #ffffff; }
+        .israel .content-center .israel-form-wrapper .israel-form fieldset {
+          margin: 25px 0 12px;
+          border: 0; }
+          .israel .content-center .israel-form-wrapper .israel-form fieldset input {
+            height: 56px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            background-color: #afb1c3;
+            padding: 5px 0 0 25px;
+            font-size: 20px;
+            color: #525360;
+            border: 0;
+            margin-bottom: 10px;
+            width: 100%; }
+        .israel .content-center .israel-form-wrapper .israel-form button {
+          width: 100%;
+          height: 65px;
+          font-size: 18px;
+          padding-top: 5px;
+          text-align: center;
+          text-decoration: none;
+          color: #1c1d27;
+          background-color: #f5e525;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+          font-weight: bold;
+          border: 0;
+          border-bottom: 8px solid #d2c30d; }
+          .israel .content-center .israel-form-wrapper .israel-form button:hover {
+            height: 57px;
+            border-bottom: 0;
+            margin-top: 8px; }
+
+.hot-proposition {
+  min-width: 1900px;
+  min-height: 715px;
+  background-color: #080924; }
+  .hot-proposition .content-center {
+    width: 1126px;
+    margin: 0 auto;
+    padding-top: 75px; }
+    .hot-proposition .content-center .hot-proposition-p1 {
+      color: #ffffff;
+      text-align: center;
+      font-size: 33px;
+      font-weight: bold; }
+    .hot-proposition .content-center .hot-proposition-p2 {
+      color: #ffffff;
+      text-align: center;
+      font-size: 28px;
+      font-weight: normal; }
+    .hot-proposition .content-center .hot-proposition-list {
+      margin: 80px auto 0;
+      list-style: none;
+      font-size: 0;
+      text-align: center;
+      color: #ffffff; }
+      .hot-proposition .content-center .hot-proposition-list li {
+        display: inline-block;
+        height: 350px;
+        width: 260px;
+        margin: 0 22px;
+        border: 5px solid #33344e;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        background-position: center top;
+        background-repeat: no-repeat;
+        vertical-align: top;
+        text-align: center; }
+        .hot-proposition .content-center .hot-proposition-list li .title {
+          font-size: 17px;
+          font-weight: bold;
+          margin-top: 165px;
+          height: 65px;
+          padding-top: 25px; }
+        .hot-proposition .content-center .hot-proposition-list li .price {
+          font-size: 18px;
+          font-weight: normal;
+          margin-top: 2px; }
+          .hot-proposition .content-center .hot-proposition-list li .price span {
+            font-size: 25px;
+            color: #e35353; }
+        .hot-proposition .content-center .hot-proposition-list li a {
+          width: 167px;
+          height: 50px;
+          font-size: 18px;
+          padding-top: 15px;
+          text-align: center;
+          text-decoration: none;
+          color: #1c1d27;
+          background-color: #f5e525;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+          font-weight: bold;
+          border: 0;
+          border-bottom: 5px solid #d2c30d;
+          margin-top: 15px;
+          display: inline-block; }
+          .hot-proposition .content-center .hot-proposition-list li a:hover {
+            height: 45px;
+            border-bottom: 0;
+            margin-top: 20px; }
+      .hot-proposition .content-center .hot-proposition-list li:nth-child(1) {
+        background-image: url("../img/ny-supper.png"); }
+      .hot-proposition .content-center .hot-proposition-list li:nth-child(2) {
+        background-image: url("../img/eilat.png"); }
+      .hot-proposition .content-center .hot-proposition-list li:nth-child(3) {
+        background-image: url("../img/ierusalim.png"); }
+
+.questions-answers {
+  min-width: 1900px;
+  height: 545px;
+  background-image: url("../img/bg-ques-answ.gif");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover; }
+  .questions-answers .content-center {
+    width: 1188px;
+    margin: 0 auto;
+    padding-top: 90px;
+    position: relative; }
+    .questions-answers .content-center p {
+      font-size: 35px;
+      font-weight: bold;
+      text-align: center; }
+      .questions-answers .content-center p .questions {
+        display: inline-block;
+        margin: 0 30px;
+        background-color: #d3585f;
+        color: #ffffff;
+        padding: 5px 35px 0 25px; }
+      .questions-answers .content-center p .answers {
+        display: inline-block;
+        margin: 0 30px;
+        background-color: #e3d837;
+        color: #0b0c24;
+        padding: 5px 35px 0 25px; }
+    .questions-answers .content-center .image-questions {
+      position: absolute;
+      margin: 40px 0 0 55px; }
+    .questions-answers .content-center .image-answers {
+      position: absolute;
+      margin: 40px 0 0 618px; }
+    .questions-answers .content-center .tell-me {
+      position: relative;
+      float: right;
+      width: 280px;
+      height: 180px;
+      margin: 80px 160px 0 0; }
+      .questions-answers .content-center .tell-me p {
+        font-size: 18px;
+        color: #ffffff;
+        text-align: center; }
+        .questions-answers .content-center .tell-me p span {
+          font-weight: bold; }
+      .questions-answers .content-center .tell-me a {
+        display: block;
+        width: 226px;
+        height: 74px;
+        font-size: 18px;
+        padding-top: 22px;
+        text-align: center;
+        text-decoration: none;
+        color: #1c1d27;
+        background-color: #f5e525;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        font-weight: bold;
+        border: 0;
+        border-bottom: 10px solid #d2c30d;
+        margin: 20px auto 0; }
+        .questions-answers .content-center .tell-me a:hover {
+          height: 64px;
+          border-bottom: 0;
+          margin: 30px auto 0; }
+
+.advantages {
+  min-width: 1900px;
+  min-height: 675px;
+  background-color: #84a1bd; }
+  .advantages .content-center {
+    width: 978px;
+    margin: 0 auto;
+    padding-top: 90px; }
+    .advantages .content-center .advantages-slogan {
+      height: 125px;
+      background-image: url("../img/adv-bg.png");
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      text-align: center;
+      font-weight: bold;
+      color: #0d0f2e; }
+      .advantages .content-center .advantages-slogan p {
+        font-size: 30px; }
+      .advantages .content-center .advantages-slogan span {
+        font-size: 26px;
+        -webkit-transform: rotate(-6deg);
+        -ms-transform: rotate(-6deg);
+        -moz-transform: rotate(-6deg);
+        -o-transform: rotate(-6deg);
+        transform: rotate(-6deg);
+        display: inline-block;
+        margin-top: 22px; }
+    .advantages .content-center .advantages-list {
+      font-size: 0;
+      margin-top: 25px; }
+      .advantages .content-center .advantages-list li {
+        width: 50%;
+        display: inline-block;
+        min-height: 150px;
+        color: #0b0c24;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 50px;
+        vertical-align: top; }
+        .advantages .content-center .advantages-list li h3 {
+          font-size: 20px;
+          position: relative;
+          margin: 12px 60px 0 170px; }
+        .advantages .content-center .advantages-list li p {
+          font-size: 16px;
+          position: relative;
+          margin: 12px 60px 0 170px; }
+      .advantages .content-center .advantages-list li:before {
+        content: "";
+        height: 150px;
+        width: 140px;
+        -webkit-border-radius: 9px;
+        -moz-border-radius: 9px;
+        border-radius: 9px;
+        background-color: #e35353;
+        position: absolute;
+        left: 0;
+        top: 0; }
+      .advantages .content-center .advantages-list li:nth-child(1):after {
+        content: url("../img/adv-li-img1.png");
+        position: absolute;
+        left: 30px;
+        top: 30px; }
+      .advantages .content-center .advantages-list li:nth-child(2):after {
+        content: url("../img/adv-li-img2.png");
+        position: absolute;
+        left: 30px;
+        top: 30px; }
+      .advantages .content-center .advantages-list li:nth-child(3):after {
+        content: url("../img/adv-li-img3.png");
+        position: absolute;
+        left: 30px;
+        top: 30px; }
+      .advantages .content-center .advantages-list li:nth-child(4):after {
+        content: url("../img/adv-li-img4.png");
+        position: absolute;
+        left: 30px;
+        top: 30px; }
+
+.israel-info {
+  min-width: 1900px;
+  min-height: 1095px;
+  background-color: #3a5064;
+  text-align: center;
+  padding-top: 80px; }
+  .israel-info p {
+    text-align: center;
+    font-size: 33px;
+    color: #ffffff;
+    font-weight: bold; }
+    .israel-info p span {
+      font-weight: normal; }
+  .israel-info .img-links {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 0;
+    height: 300px; }
+    .israel-info .img-links li {
+      display: inline-block;
+      vertical-align: top;
+      width: 16.5%; }
+    .israel-info .img-links li:nth-child(odd) {
+      -webkit-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+      -moz-transform: rotate(-5deg);
+      -o-transform: rotate(-5deg);
+      transform: rotate(-5deg); }
+    .israel-info .img-links li:nth-child(even) {
+      -webkit-transform: rotate(3deg);
+      -ms-transform: rotate(3deg);
+      -moz-transform: rotate(3deg);
+      -o-transform: rotate(3deg);
+      transform: rotate(3deg); }
+    .israel-info .img-links li:hover {
+      -webkit-transform: rotate(0);
+      -ms-transform: rotate(0);
+      -moz-transform: rotate(0);
+      -o-transform: rotate(0);
+      transform: rotate(0);
+      margin-top: 25px; }
+  .israel-info .content-center {
+    width: 1104px;
+    margin: 0 auto; }
+    .israel-info .content-center .israel-info-list {
+      float: left;
+      list-style: none;
+      margin-top: 30px; }
+      .israel-info .content-center .israel-info-list li {
+        width: 600px;
+        min-height: 260px;
+        margin-bottom: 15px;
+        background-image: url("../img/bg-israel-info.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding: 55px 60px 0 75px; }
+        .israel-info .content-center .israel-info-list li p {
+          color: #ffffff;
+          font-size: 17px;
+          text-align: left;
+          font-weight: normal; }
+          .israel-info .content-center .israel-info-list li p h2, .israel-info .content-center .israel-info-list li p h3, .israel-info .content-center .israel-info-list li p h4, .israel-info .content-center .israel-info-list li p span {
+            font-weight: bold; }
+    .israel-info .content-center .israel-info-form-wrapper {
+      width: 390px;
+      margin-left: 63px;
+      float: right; }
+      .israel-info .content-center .israel-info-form-wrapper .israel-info-form {
+        color: #ffffff;
+        margin-top: 50px; }
+        .israel-info .content-center .israel-info-form-wrapper .israel-info-form .israel-info-form-label {
+          font-size: 23px;
+          font-weight: bold;
+          text-align: center; }
+        .israel-info .content-center .israel-info-form-wrapper .israel-info-form p {
+          text-align: center;
+          margin-top: 25px;
+          font-size: 18px;
+          font-weight: normal; }
+          .israel-info .content-center .israel-info-form-wrapper .israel-info-form p span {
+            font-weight: bold; }
+        .israel-info .content-center .israel-info-form-wrapper .israel-info-form fieldset {
+          margin: 45px 0 12px;
+          border: 0; }
+          .israel-info .content-center .israel-info-form-wrapper .israel-info-form fieldset input {
+            height: 56px;
+            width: 275px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            background-color: #afb1c3;
+            padding: 5px 0 0 25px;
+            font-size: 20px;
+            color: #525360;
+            border: 0;
+            margin-bottom: 10px; }
+        .israel-info .content-center .israel-info-form-wrapper .israel-info-form button {
+          width: 274px;
+          height: 65px;
+          font-size: 18px;
+          padding-top: 5px;
+          text-align: center;
+          text-decoration: none;
+          color: #1c1d27;
+          background-color: #f5e525;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+          font-weight: bold;
+          border: 0;
+          border-bottom: 8px solid #d2c30d; }
+          .israel-info .content-center .israel-info-form-wrapper .israel-info-form button:hover {
+            height: 57px;
+            border-bottom: 0;
+            margin-top: 8px; }
+
+.text-section {
+  min-width: 1900px;
+  height: 465px;
+  background-image: url("../img/bg-text-section.png");
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover; }
+  .text-section .content-center {
+    width: 978px;
+    margin: 0 auto;
+    padding-top: 140px;
+    color: #ffffff;
+    text-align: left; }
+    .text-section .content-center .text-section-p1 {
+      font-size: 33px;
+      margin-left: 15px; }
+    .text-section .content-center .text-section-p2 {
+      font-size: 41px;
+      font-weight: bold;
+      margin: 15px 0 30px 0; }
+    .text-section .content-center .text-section-p3 {
+      font-size: 30px;
+      font-weight: bold;
+      margin-left: 15px; }
+    .text-section .content-center span {
+      background-color: #d75355;
+      padding: 10px 15px 10px; }
+
+.comments {
+  min-width: 1900px;
+  min-height: 675px;
+  background-color: #080924; }
+  .comments .content-center {
+    width: 978px;
+    margin: 0 auto;
+    padding-top: 80px;
+    color: #ffffff; }
+    .comments .content-center h2 {
+      font-size: 30px;
+      text-align: center;
+      font-weight: bold; }
+    .comments .content-center p {
+      font-size: 26px;
+      margin-top: 10px;
+      text-align: center;
+      font-weight: normal; }
+    .comments .content-center .comments-list {
+      font-size: 0;
+      margin-top: 75px; }
+      .comments .content-center .comments-list li {
+        width: 50%;
+        display: inline-block;
+        min-height: 310px;
+        color: #ffffff;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 50px;
+        vertical-align: top;
+        background-image: url("../img/bg-com-li.png");
+        background-position: 20% 70%;
+        background-repeat: no-repeat; }
+        .comments .content-center .comments-list li .name {
+          font-size: 16px;
+          position: relative;
+          margin: 0 15px 0 175px;
+          text-align: left;
+          font-weight: bold; }
+        .comments .content-center .comments-list li span {
+          font-size: 15px;
+          display: block;
+          text-align: left;
+          margin: 5px 15px 0 175px; }
+        .comments .content-center .comments-list li .comment {
+          font-size: 16px;
+          position: relative;
+          margin: 15px 15px 0 175px;
+          text-align: left; }
+      .comments .content-center .comments-list li:nth-child(1):before {
+        content: url("../img/photo1.png");
+        position: absolute;
+        left: 0;
+        top: 0; }
+      .comments .content-center .comments-list li:nth-child(2):before {
+        content: url("../img/photo2.png");
+        position: absolute;
+        left: 0;
+        top: 0; }
+      .comments .content-center .comments-list li:nth-child(3):before {
+        content: url("../img/photo3.png");
+        position: absolute;
+        left: 0;
+        top: 0; }
+      .comments .content-center .comments-list li:nth-child(4):before {
+        content: url("../img/photo4.png");
+        position: absolute;
+        left: 0;
+        top: 0; }
+
+.discount {
+  min-width: 1900px;
+  height: 480px;
+  background-image: url("../img/bg-israel.gif");
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover; }
+  .discount .content-center {
+    width: 978px;
+    padding-top: 35px;
+    margin: 0 auto; }
+    .discount .content-center .discount-content {
+      width: 520px;
+      min-height: 320px;
+      float: left;
+      color: #ffffff; }
+      .discount .content-center .discount-content .p1 {
+        font-weight: normal;
+        margin-top: 90px;
+        font-size: 30px; }
+      .discount .content-center .discount-content .p2 {
+        font-weight: bold;
+        margin-top: 5px;
+        font-size: 35px; }
+        .discount .content-center .discount-content .p2 span {
+          display: inline-block;
+          color: #0c0d23;
+          background-color: #f5e525;
+          padding: 10px 15px 7px;
+          font-weight: bold; }
+      .discount .content-center .discount-content .p3 {
+        font-weight: normal;
+        margin-top: 45px;
+        font-size: 22px;
+        text-align: left; }
+        .discount .content-center .discount-content .p3 span {
+          font-weight: bold;
+          font-size: 24px; }
+    .discount .content-center .discount-form-wrapper {
+      width: 359px;
+      float: right; }
+      .discount .content-center .discount-form-wrapper .discount-form {
+        padding: 0 43px;
+        height: 425px;
+        width: 359px;
+        background-color: #1f2357;
+        overflow: hidden;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px; }
+        .discount .content-center .discount-form-wrapper .discount-form .p4, .discount .content-center .discount-form-wrapper .discount-form .p5 {
+          text-align: center;
+          font-size: 23px;
+          color: #ffffff; }
+        .discount .content-center .discount-form-wrapper .discount-form .p4 {
+          margin-top: 35px; }
+        .discount .content-center .discount-form-wrapper .discount-form .p5 {
+          margin-top: 5px; }
+        .discount .content-center .discount-form-wrapper .discount-form fieldset {
+          margin: 25px 0 12px;
+          border: 0; }
+          .discount .content-center .discount-form-wrapper .discount-form fieldset input {
+            height: 56px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            background-color: #afb1c3;
+            padding: 5px 0 0 25px;
+            font-size: 20px;
+            color: #525360;
+            border: 0;
+            margin-bottom: 10px;
+            width: 100%; }
+        .discount .content-center .discount-form-wrapper .discount-form button {
+          width: 100%;
+          height: 65px;
+          font-size: 18px;
+          padding-top: 5px;
+          text-align: center;
+          text-decoration: none;
+          color: #1c1d27;
+          background-color: #f5e525;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+          font-weight: bold;
+          border: 0;
+          border-bottom: 8px solid #d2c30d; }
+          .discount .content-center .discount-form-wrapper .discount-form button:hover {
+            height: 57px;
+            border-bottom: 0;
+            margin-top: 8px; }
+
+.footer {
+  min-width: 1900px;
+  height: 115px;
+  background-color: #0a0b26; }
+  .footer .content-center {
+    width: 1024px;
+    padding: 15px 23px 0 16px;
+    margin: 0 auto; }
+    .footer .content-center .logo {
+      float: left;
+      margin-top: 30px; }
+      .footer .content-center .logo h1 {
+        display: none; }
+    .footer .content-center .footer-nav {
+      margin: 20px 0 0 80px;
+      list-style-image: url("../img/list-style-image.gif");
+      float: left; }
+      .footer .content-center .footer-nav li:hover {
+        padding-left: 10px; }
+      .footer .content-center .footer-nav a {
+        text-decoration: none;
+        font-size: 15px;
+        color: #ffffff; }
+    .footer .content-center aside {
+      float: right;
+      width: 417px;
+      height: 90px;
+      padding-top: 20px; }
+      .footer .content-center aside .phone-number {
+        color: #ffffff;
+        font-weight: bold;
+        float: left;
+        margin-top: 5px; }
+        .footer .content-center aside .phone-number .phone-number1 {
+          font-size: 15px; }
+        .footer .content-center aside .phone-number .phone-number2 {
+          font-size: 20px; }
+      .footer .content-center aside .footer-button {
+        float: right;
+        width: 167px;
+        height: 75px; }
+        .footer .content-center aside .footer-button a {
+          display: block;
+          width: 167px;
+          height: 50px;
+          font-size: 15px;
+          padding-top: 16px;
+          text-align: center;
+          text-decoration: none;
+          color: #ffffff;
+          background-color: #e35353;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+          font-weight: bold;
+          border-bottom: 6px solid #c74848; }
+          .footer .content-center aside .footer-button a:hover {
+            height: 44px;
+            border-bottom: 0;
+            margin-top: 6px; }
+      .footer .content-center aside .but {
+        display: inline-block;
+        color: #77777e;
+        margin: 12px 0 0 30px;
+        font-size: 14px; }
+      .footer .content-center aside .phone-slogan {
+        display: block;
+        color: #bebec1;
+        margin: 5px 0 0 55px;
+        font-size: 12px; }
+
+/*# sourceMappingURL=hw12.css.map */

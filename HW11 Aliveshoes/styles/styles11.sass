@@ -1,0 +1,405 @@
+h1, h2, h3, dl, dd, p, ul
+  padding: 0
+  margin: 0
+  -webkit-margin-before: 0
+  -webkit-margin-after: 0
+  -webkit-margin-start: 0
+  -webkit-padding-start: 0
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+@mixin button ($w,$h,$fs)
+  width: $w
+  height: $h
+  font-size: $fs
+  padding: 0
+  border: 0
+  -webkit-border-radius: 5px
+  -moz-border-radius: 5px
+  border-radius: 5px
+  text-align: center
+
+@mixin share-links-styles ($wdth,$bg-psn,$mg-lft)
+  width: $wdth
+  height: 21px
+  background-image: url("../img/sprites.gif")
+  background-position: $bg-psn
+  margin-left: $mg-lft
+
+$main-font: 16px
+
+body
+  font-family: "Lato", "Myriad Pro" sans-serif
+
+.wrapper
+  width: 1400px
+  margin: 0 auto
+
+.header
+  min-height: 60px
+  background-color: #000000
+  .logo
+    float: left
+    height: 60px
+  .header-nav
+    float: right
+    ul
+      font-size: 0
+      margin-top: 24px
+      height: 20px
+    li
+      font-size: $main-font
+      display: inline-block
+      padding-right: 20px
+      position: relative
+      &:last-child
+        border-left: 1px solid #ffffff
+        padding: 0 40px 0 20px
+    a
+      text-decoration: none
+      color: #ffffff
+    span:after
+      content: ""
+      position: absolute
+      top: 21%
+      right: 16%
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 8px 8px 0 8px
+      border-color: #ffffff transparent transparent transparent
+  .header-button
+    @include button (185px,43px,0)
+    float: right
+    margin: 10px 30px 0 0
+
+.title
+  min-height: 100px
+  background-color: #b1b1b1
+  text-align: center
+  h1
+    font-size: 45px
+    font-weight: bold
+    color: #ffffff
+    padding-top: 25px
+
+.profile
+  min-height: 140px
+  border-bottom: 1px solid #b1b1b1
+  .profile-info
+    float: left
+    width: 700px
+    img
+      margin: 20px 0 0 230px
+      float: left
+    h2
+      margin: 23px 0 15px
+      padding-left: 15px
+      overflow: hidden
+    dl
+      padding-left: 15px
+      overflow: hidden
+    dt
+      float: left
+      color: #010101
+      font-size: 22px
+    dd
+      padding-left: 5px
+      color: #f50948
+      font-size: 22px
+      font-weight: bold
+      -webkit-margin-start: 0px
+      overflow: hidden
+  button
+    @include button (180px,30px,0)
+    overflow: hidden
+    .button-img-hover
+      display: none
+    &:hover
+      .button-img
+        display: none
+      .button-img-hover
+        display: block
+  ul
+    float: right
+    margin: 18px 230px 0 0
+    list-style-type: none
+    li
+      margin-bottom: 9px
+      width: 180px
+      height: 30px
+
+.general-stats
+  min-height: 32px
+  font-size: $main-font
+  padding: 7px 0 0 230px
+  background-color: #dfdfdf
+  p
+    color: #000000
+    float: left
+  dl
+    overflow: hidden
+    padding-left: 8px
+  dt
+    color: #545454
+    display: inline-block
+  dd
+    color: #000000
+    display: inline-block
+    padding-right: 24px
+    font-weight: bold
+
+.main-content
+  min-height: 1540px
+  border-bottom: 1px solid #b1b1b1
+  ul
+    font-size: 0px
+    margin: 30px 0 0 230px
+    li
+      display: inline-block
+      margin-right: 20px
+      button
+        background-color: #000000
+        @include button (240px,40px,16px)
+        .button-element
+          display: block
+          float: left
+          width: 40px
+          height: 40px
+          background-color: #333333
+          padding-top: 11px
+        span
+          font-size: $main-font
+          color: #ffffff
+          display: block
+          padding-top: 11px
+      .active
+        opacity: 0.5
+  .main-content-wrapper
+    margin: 40px 210px 0 230px
+  .shoes-window
+    width: 460px
+    height: 410px
+    margin: 0 20px 30px 0
+    border: 1px solid #ededed
+    float: left
+    position: relative
+    .shoes-window-top
+      height: 220px
+      background-image: url("../img/window-bg.gif")
+      .limited
+        float: left
+        margin: 8px 0 0 -4px
+      .trash
+        width: 18px
+        height: 20px
+        float: right
+        margin: 15px 15px 0 0
+        background-image: url("../img/sprites.gif")
+        background-position: -30px
+        text-indent: -9999px
+      .revert
+        width: 18px
+        height: 20px
+        float: right
+        margin: 15px 13px 0 0
+        background-image: url("../img/sprites.gif")
+        text-indent: -9999px
+      .days-left
+        margin: 33px 10px 0 0
+        float: right
+        clear: right
+      h2
+        font-size: 30px
+        font-weight: bold
+        position: absolute
+        margin: 175px 0 20px 170px
+    .shoes-window-middle
+      height: 40px
+      font-size: $main-font
+      color: #ffffff
+      text-align: center
+      padding-top: 10px
+    .shoes-window-bottom
+      padding-top: 20px
+      text-align: center
+      .info1
+        font-size: 20px
+        padding-bottom: 15px
+      .info2
+        font-size: $main-font
+        padding-bottom: 15px
+        span
+          font-weight: bold
+      ul
+        font-size: 0px
+        margin: 0 9px 10px 29px
+        li
+          display: inline-block
+          margin: 0 19px 10px 0
+          button
+            @include button (190px,30px,16px)
+            span
+              padding-top: 5px
+          .red-button
+            background-color: #e5436f
+          .black-button
+            background-color: #000000
+    .yellow
+      background-color: #edad00
+    .green
+      background-color: #23be1b
+    .red
+      background-color: #d00909
+    .orange
+      background-color: #f74000
+    .last-window-buttons
+      padding-top: 30px
+
+footer
+  min-height: 315px
+  background-color: #ededed
+  .about
+    width: 750px
+    min-height: 245px
+    float: left
+    h3
+      font-size: 22px
+      height: 45px
+      border-bottom: 1px solid #b1b1b1
+      padding: 16px 0 0 230px
+      span
+        font-weight: normal
+    p
+      font-size: $main-font
+      padding: 16px 40px 0 230px
+      text-align: justify
+    button
+      @include button (185px,41px,16px)
+      background-color: #e82b5e
+      margin: 20px 0 0 230px
+      .button-element1
+        float: left
+        display: block
+      .button-element2
+        display: block
+        padding-top: 11px
+  .footer-links
+    width: 650px
+    min-height: 245px
+    overflow: hidden
+    .links-about
+      min-width: 210px
+      list-style-type: none
+      float: left
+      .title-links
+        font-size: 22px
+        height: 45px
+        padding-top: 16px
+        border-bottom: 1px solid #b1b1b1
+      li
+        padding-top: 10px
+        a
+          font-size: $main-font
+          color: #000000
+          text-decoration: none
+      .first-li
+        padding-top: 16px
+    .links-assistance
+      list-style-type: none
+      overflow: hidden
+      .title-links
+        font-size: 22px
+        height: 45px
+        padding-top: 16px
+        border-bottom: 1px solid #b1b1b1
+      li
+        padding-top: 10px
+        a
+          font-size: $main-font
+          color: #000000
+          text-decoration: none
+      .first-li
+        padding-top: 16px
+.share-and-copyrights
+  min-height: 70px
+  p
+    padding: 5px 0 0 230px
+  .share-links
+    float: left
+    margin-top: 10px
+    text-indent: -9999px
+  .fb1
+    @include share-links-styles (47px,-57px,230px)
+  .fb2
+    @include share-links-styles (47px,-117px,5px)
+  .one-k
+    @include share-links-styles (26px,-166px,3px)
+  .tweett
+    @include share-links-styles (57px,-205px,10px)
+  .thh
+    @include share-links-styles (23px,-264px,3px)
+  .google
+    @include share-links-styles (33px,-289px,4px)
+  .pin-it
+    @include share-links-styles (42px,-327px,5px)
+  .copyright
+    float: right
+    margin: 10px 215px 0 0
+    span
+      font-weight: bold
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

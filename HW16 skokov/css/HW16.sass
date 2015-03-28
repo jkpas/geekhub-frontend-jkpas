@@ -1,0 +1,489 @@
+@import myreset.sass
+
+body
+  width: 100%
+  font-family: "CenturyGothic" sans-serifs
+  color: #000
+  background-color: #ffffff
+
+.wrapper
+  max-width: 1633px
+  margin: 15px auto 0
+
+.header
+  min-height: 160px
+  background-color: #f6f6f6
+  .navbar-inverse
+    background: none
+  h1
+    text-indent: -9999px
+    font-size: 0
+  .logo
+    margin: 22px 0 0 134px
+  #navbar
+    -webkit-box-shadow: none
+    -moz-box-shadow: none
+    box-shadow: none
+    .header-nav
+      margin: 49px 7.3% 0 0
+      float: right
+      font-size: 0
+      li
+        display: inline-block
+        height: 65px
+        padding: 16px 10px 0
+        margin-left: 60px
+        &:first-child
+          margin-left: 0
+        a
+          color: #000000
+          font-family: "Code"
+          font-size: 16px
+          font-weight: 300
+          line-height: 32.004002px
+      .active
+        background-color: #23be1b
+
+.order-now
+  max-height: 700px
+  position: relative
+  #owl-order-now
+    position: relative
+    .item
+      img
+        display: block
+        background-size: cover
+    .owl-prev
+      width: 46px
+      height: 100px
+      background-color: black
+      position: absolute
+      top: 50%
+      left: 0
+      margin-top: -50px
+      &:before
+        content: ""
+        position: absolute
+        left: 11px
+        top: 50%
+        margin-top: -15px
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 15px 16px 15px 0
+        border-color: transparent #ffffff transparent transparent
+      &:after
+        content: ""
+        position: absolute
+        left: 13px
+        top: 50%
+        margin-top: -15px
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 15px 16px 15px 0
+        border-color: transparent #000000 transparent transparent
+    .owl-next
+      width: 46px
+      height: 100px
+      background-color: black
+      position: absolute
+      top: 50%
+      right: 0
+      margin-top: -50px
+      &:before
+        content: ""
+        position: absolute
+        right: 11px
+        top: 50%
+        margin-top: -15px
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 15px 0 15px 16px
+        border-color: transparent transparent transparent #ffffff
+      &:after
+        content: ""
+        position: absolute
+        right: 13px
+        top: 50%
+        margin-top: -15px
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 15px 0 15px 16px
+        border-color: transparent transparent transparent #000000
+    .owl-pagination
+      position: absolute
+      bottom: 3.3%
+      left: 50%
+      margin-left: -15px
+      .owl-page
+        width: 26px
+        height: 26px
+        background-color: #414146
+        margin: 0 3px
+        display: inline-block
+      .active
+        background-color: #ffeb00
+        border: 3px solid #414146
+  .order-now-button
+    width: 191px
+    height: 40px
+    background-color: black
+    position: absolute
+    top: 65%
+    left: 32%
+    border: none
+    border-bottom: 3px solid #f7e546
+    color: white
+    font-size: 24px
+    font-weight: 400
+    text-decoration: none
+    text-align: center
+    &:hover
+      border: none
+      border-top: 3px solid #f7e546
+
+.quality-designs
+  min-height: 620px
+  padding: 90px 0 105px
+  text-align: center
+  overflow: hidden
+  h2
+    color: #424147
+    font-size: 35px
+    font-weight: 400
+    margin-bottom: 27px
+    text-transform: uppercase
+  .desings-menu-slogan
+    color: #424147
+    font-size: 24px
+    font-weight: 400
+    margin-bottom: 40px
+  .desings-menu
+    font-size: 0
+    li
+      display: inline-block
+      margin: 0 27px
+      vertical-align: top
+      margin-top: 20px
+      a
+        text-decoration: none
+        .top-li
+          width: 250px
+          height: 200px
+          background-color: #ffea00
+          text-align: center
+          position: relative
+          img
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            margin: auto
+          h3
+            color: black
+            font-family: "Code"
+            font-size: 20px
+            font-weight: 300
+            text-transform: uppercase
+            position: absolute
+            bottom: 5%
+            left: 0
+            right: 0
+        .bottom-li
+          width: 250px
+          height: 85px
+          background-color: #414146
+          text-align: center
+          padding-top: 27px
+          p
+            color: white
+            font-size: 13px
+            font-weight: 400
+          h3
+            display: none
+    li.active2
+      a
+        .top-li
+          background-color: #ffffff
+          h3
+            display: none
+        .bottom-li
+          text-align: left
+          overflow: hidden
+          p
+            display: none
+          h3
+            display: block
+            color: #ffffff
+            font-family: "Code"
+            font-size: 20px
+            font-weight: 300
+            text-transform: uppercase
+            text-align: center
+            line-height: 23.00288px
+
+.our-work
+  min-height: 1025px
+  text-align: center
+  margin-top: 50px
+  overflow: hidden
+  h2
+    font-size: 18px
+    color: #ffea00
+    position: relative
+    display: inline-block
+    margin-bottom: 32px
+    padding: 9px 30px
+    background: #424147
+    text-transform: uppercase
+    &:before,
+    &:after
+      content: ""
+      position: absolute
+      top: 50%
+      height: 1px
+      background: #cacaca
+    &:before
+      left: -99999px
+      right: 130%
+    &:after
+      right: -99999px
+      left: 130%
+  .item
+    margin: 5px 0
+
+.section-slogan
+  font-size: 16px
+  color:  #424146
+  margin-bottom: 40px
+
+.our-clients
+  min-height: 305px
+  text-align: center
+  margin-top: 50px
+  overflow: hidden
+  padding-bottom: 7.6%
+  .owl-carousel
+    padding: 0 120px
+    .owl-item
+      width: 180px !important
+  h2
+    font-size: 18px
+    color: #ffea00
+    position: relative
+    display: inline-block
+    margin-bottom: 32px
+    padding: 9px 30px
+    background: #424147
+    text-transform: uppercase
+    &:before,
+    &:after
+      content: ""
+      position: absolute
+      top: 50%
+      height: 1px
+      background: #cacaca
+    &:before
+      left: -99999px
+      right: 130%
+    &:after
+      right: -99999px
+      left: 130%
+  #owl-our-clients
+    position: relative
+    height: 65px
+    overflow: hidden
+    .owl-wrapper-outer
+      padding: 0
+    .item
+      img
+        display: block
+        background-size: cover
+    .owl-prev
+      width: 46px
+      height: 65px
+      background-color: black
+      position: absolute
+      top: 50%
+      left: 0
+      margin-top: -32px
+      &:before
+        content: ""
+        position: absolute
+        left: 11px
+        top: 50%
+        margin-top: -15px
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 15px 16px 15px 0
+        border-color: transparent #ffffff transparent transparent
+      &:after
+        content: ""
+        position: absolute
+        left: 13px
+        top: 50%
+        margin-top: -15px
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 15px 16px 15px 0
+        border-color: transparent #000000 transparent transparent
+    .owl-next
+      width: 46px
+      height: 65px
+      background-color: black
+      position: absolute
+      top: 50%
+      right: 0
+      margin-top: -32px
+      &:before
+        content: ""
+        position: absolute
+        right: 11px
+        top: 50%
+        margin-top: -15px
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 15px 0 15px 16px
+        border-color: transparent transparent transparent #ffffff
+      &:after
+        content: ""
+        position: absolute
+        right: 13px
+        top: 50%
+        margin-top: -15px
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 15px 0 15px 16px
+        border-color: transparent transparent transparent #000000
+
+.footer
+  color: #ffffff
+  .about-info
+    min-height: 500px
+    padding: 1.83% 0
+    background-color: #414146
+    overflow: hidden
+    h3
+      font-size: 18px
+      margin-bottom: 25px
+    .about-us-wrapper
+      float: left
+      padding: 0 0 0 7.3%
+      background-color: #414146
+      overflow: hidden
+      .about-us
+        p
+          font-size: 13px
+          margin-bottom: 33px
+          text-align: left
+        button
+          height: 39px
+          width: 122px
+          background-color: black
+          border: none
+          border-bottom: 3px solid #f7e546
+          color: white
+          font-size: 24px
+          font-weight: 400
+          text-decoration: none
+          text-align: center
+          &:hover
+            border: none
+            border-top: 3px solid #f7e546
+      .photo-stream
+        padding: 7.35% 0
+        ul
+          li
+            display: inline-block
+            margin: 0 5px 5px 0
+    .latest-tweets
+      float: left
+      padding: 0 0 0 7.3%
+      background-color: #414146
+    .contact-info
+      overflow: hidden
+      padding: 0 5% 0 7.3%
+      background-color: #414146
+      ul
+        margin-top: 20px
+        li
+          margin-bottom: 20px
+          color: #ffffff
+          font-size: 13px
+          padding-left: 10px
+          vertical-align: top
+          padding-top: 10px
+          span
+            color: #ffea00
+            vertical-align: top
+          &:nth-child(1)
+            list-style-image: url("../img/li-img1.png")
+          &:nth-child(2)
+            list-style-image: url("../img/li-img2.png")
+          &:nth-child(3)
+            list-style-image: url("../img/li-img3.png")
+  .copyright
+    min-width: 70px
+    background-color: #000000
+    color: #ffffff
+    padding: 1.6% 7.3% 0 7.3%
+    overflow: hidden
+    address
+      float: left
+      color: #ffffff
+      font-size: 14px
+      padding-top: 5px
+    .footer-nav
+      float: right
+      font-size: 0
+      vertical-align: top
+      li
+        display: inline-block
+        height: 65px
+        padding: 0 10px
+        margin-left: 60px
+        vertical-align: top
+        &:first-child
+          margin-left: 0
+        a
+          color: #ffffff
+          font-family: "Code"
+          font-size: 16px
+          font-weight: 300
+          line-height: 32.004002px
+
+@media (max-width: 768px)
+  .owl-pagination
+    display: none
+  .our-clients
+    .owl-carousel
+      padding: 0 0
+      .owl-item
+        width: 140px !important
+  .footer
+    .about-info
+      .about-us-wrapper, .latest-tweets, .contact-info
+        padding: 5% 0 0 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

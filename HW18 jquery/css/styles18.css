@@ -1,0 +1,41 @@
+
+
+.main {
+    position: relative;
+}
+
+button {
+    height: 50px;
+    width: 100px;
+    margin: 50px;
+    vertical-align: top;
+    padding: 0;
+}
+
+#fade {
+    display: none;
+    position: absolute;
+    top: 200px;
+    left:33%;
+    color: #007BFF;
+    text-align: center;
+    font-size: 100px;
+}
+
+#googlemaps {
+    height: 300px;
+    width: 300px;
+}
+
+.img-wrap {
+    display: inline-block;
+    margin: 50px;
+}
+
+.img-wrap p {
+    text-align: center;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}

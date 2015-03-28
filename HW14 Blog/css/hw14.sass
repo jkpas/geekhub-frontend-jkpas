@@ -1,0 +1,252 @@
+h1, h2, h3, dl, dd, p, ul, fieldset, input, figure
+  padding: 0
+  margin: 0
+  -webkit-margin-before: 0
+  -webkit-margin-after: 0
+  -webkit-margin-start: 0
+  -webkit-padding-start: 0
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+ul
+  list-style: none
+
+*:focus
+  outline: none
+
+@mixin bord-rad ($br)
+  -webkit-border-radius: $br
+  -moz-border-radius: $brd
+  border-radius: $br
+
+body
+  font-family: "Open Sans", sans-serif
+  color: #000
+
+h2
+  font-size: 32px
+  margin-bottom: 25px
+  font-weight: 100
+
+a
+  &:hover
+    position: relative
+    top: 1px
+
+h3
+  font-size: 15px
+  margin-bottom: 15px
+  font-weight: bold
+
+.header
+  min-height: 365px
+  width: inherit
+  background-image: url("../img/header-bg.png")
+  background-size: cover
+  position: fixed
+  top: 0
+  z-index: 1
+  h1
+    text-indent: -9999px
+    font-size: 0
+  .navbar-inverse
+    background: none
+  .header-filter
+    margin: 20px auto 0
+    width: 400px
+    li
+      display: inline-block
+      margin: 0 13px
+    a
+      font-size: 15px
+      color: #909090
+      text-decoration: none
+      &:hover
+        position: relative
+        top: 1px
+    .active
+      color: #ffffff
+.content-wrapper
+  margin-top: 365px
+  overflow: hidden
+  .content
+    padding: 20px 45px 0 95px
+    float: left
+    .post-preview
+      padding: 45px 0 50px
+      border-bottom: 1px solid #bababa
+      h2
+        a
+          text-decoration: none
+      span
+        margin-bottom: 15px
+        display: block
+      article
+        margin-bottom: 30px
+        line-height: 32px
+      .social-links
+        margin-bottom: 40px
+        display: block
+      .videowrapper
+        position: relative
+        padding-bottom: 56.25%
+        padding-top: 25px
+        height: 0
+        iframe
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+      .social-links
+        height: 21px
+        width: 204px
+      img
+        width: 100%
+        height: auto
+    .post-navigation
+      min-height: 195px
+      padding: 80px 0 0 0
+      a
+        font-size: 37px
+        font-weight: 100
+        color: #848484
+        text-decoration: none
+        span
+          display: inline-block
+      .old
+        float: left
+        span
+          margin: 15px 0 0 18px
+      .new
+        float: right
+        span
+          margin: 15px 18px 0 0
+  aside
+    height: inherit
+    overflow: hidden
+    padding: 30px 50px 0 45px
+    background-color: #f6f6f6
+    line-height: 28px
+    .aside-section
+      border-bottom: 1px solid #bababa
+      padding: 35px 0 40px
+      p
+        color: #5b5b5b
+        font-size: 15px
+      .email-form
+        margin: 20px 0 35px
+        input
+          height: 35px
+          width: 230px
+          border: none
+          padding-left: 15px
+        button
+          height: 35px
+          width: 35px
+          background-color: #c4c4c4
+          color: #ffffff
+          border: none
+          padding: 0
+          bottom: 2px
+          right: 5px
+      li
+        display: inline-block
+        margin-right: 10px
+        i
+          color: #bcbdc0
+    .recent-links
+      h3
+        margin-top: 15px
+      li
+        display: block
+        a
+          text-decoration: none
+    .search
+      h3
+        margin-bottom: 25px
+      input
+        height: 35px
+        width: 230px
+        border: none
+        padding-left: 15px
+      button
+        height: 35px
+        width: 35px
+        background-color: #c4c4c4
+        color: #ffffff
+        border: none
+        padding: 0
+        position: relative
+        right: 5px
+
+.footer
+  min-height: 190px
+  background-color: #018dd2
+  .footer-header
+    min-height: 115px
+    background-color: #00a2f2
+    padding-top: 35px
+    ul
+      width: 90%
+      li
+        display: inline-block
+        padding: 0 8px 0
+        a
+          color: #ffffff
+  .footer-address-nav
+    padding: 3% 5% 0
+    address
+      float: left
+      font-size: 15px
+      color: #a5ccea
+      margin-bottom: 5px
+    .footer-nav
+      float: right
+      ul
+        li
+          display: inline-block
+          padding: 0 3%
+        a
+          font-size: 15px
+          color: #a5ccea
+          text-decoration: none
+
+@import hw14_tablet.sass
+
+@import hw14_mobile.sass
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

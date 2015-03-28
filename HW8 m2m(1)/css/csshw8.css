@@ -1,0 +1,284 @@
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+body {
+    padding: 0;
+    margin: 0;
+    font: 12px Tahoma, sans-serif;
+    background: #fff;
+    color: #000;
+}
+
+div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, checkbox, input, textarea {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    list-style: none;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+textarea {
+    vertical-align: top;
+}
+
+:focus {
+    outline: none;
+}
+
+input[type=submit] {
+    cursor: pointer;
+}
+
+img, fieldset {
+    border: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a:link, a:visited {
+    font: 12px Tahoma, sans-serif;
+    color: #000;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.float-r {
+    float: right !important;
+}
+
+.float-l {
+    float: left !important;
+}
+
+.no-float {
+    float: none !important;
+}
+
+.no-border {
+    border: 0 !important;
+}
+
+.no-bg {
+    background: none !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.no-display {
+    display: none !important;
+}
+
+.display {
+    display: block !important;
+}
+
+.inline {
+    display: inline !important;
+}
+
+.overflow {
+    overflow: hidden !important;
+}
+
+.align-r {
+    text-align: right !important;
+}
+
+.align-l {
+    text-align: left !important;
+}
+
+.align-c {
+    text-align: center !important;
+}
+
+.clear {
+    clear: both;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+body {
+    width: 100%;
+    background: url("../img/background-wrapper.jpg") repeat-x;
+    font: 14px/19px Arial sans-serif;
+}
+
+.wrapper {
+    width: 780px;
+    margin: 0 auto;
+
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.header {
+    height: 164px;
+    border-bottom: solid 1px #939598;
+}
+
+.logo {
+    height: 164px;
+    width: 285px;
+    float: left;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+nav {
+    height: 164px;
+    width: 495px;
+    overflow: hidden;
+}
+
+.navigation {
+    padding: 77px 26px 0 0;
+    text-align: right;
+}
+
+.navigation li {
+    display: inline;
+    padding-left: 50px;
+}
+
+.navigation a {
+    font: 15px Arial, sans-serif;
+    color: #939597;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: #45B7FA;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.menu-content-wrapper {
+    min-height: 735px;
+    border-bottom: solid 1px #939598;
+}
+
+.menu {
+    width: 252px;
+    float: left;
+    padding: 0 20px 0 2px;
+}
+
+.category p {
+    width: 118px;
+    position: relative;
+    font: 20px Arial, sans-serif;
+    color: #03A7FD;
+    padding: 25px 0 23px 0;
+}
+
+.category p:after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 6px 0 6px;
+    border-color: #03A7FD transparent transparent transparent;
+}
+
+.menu li {
+    padding: 10px 0 10px;
+    border-bottom: solid 1px #939598;
+    list-style-image: url("../img/list-style-image.gif");
+    list-style-position: inside;
+}
+
+.menu li:last-child {
+    border-bottom: none;
+}
+
+.menu a {
+    font: 14px Arial, sans-serif;
+    color: #545454;
+    text-decoration: none;
+}
+
+.content {
+    width: 528px;
+    overflow: hidden;
+}
+
+.content-header {
+    height: 100px;
+    border-bottom: solid 1px #00A7FB;
+}
+
+.content-header p {
+    font: 26px Arial, sans-serif;
+    color: #000;
+    padding-top: 59px;
+}
+
+.image-block {
+    height: 180px;
+    background-color: #78797B;
+    border-radius: 15px/12px;
+    padding: 58px 0 0 165px;
+}
+
+.content article {
+    font: 14px/19px Arial, sans-serif;
+    color: #444444;
+    padding: 13px 0 13px;
+}
+
+.content article p {
+    font: 18px Arial, sans-serif;
+    color: #03A7FD;
+    padding: 22px 0 10px;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------SIDEBAR--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+footer {
+    font: 10px Arial, sans-serif;
+    color: #77797B;
+    padding: 6px 0 0 9px;
+}
+
+footer p span {
+    color: #000000;
+}

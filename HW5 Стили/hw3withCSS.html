@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Style-Type" content="text/html; charset=utf-8"/>
+    <title>Урок "Формы"</title>
+    <link href="csshw3.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<h1>Урок "Формы": теги и их атрибуты.</h1>
+
+<h2>Расскажите немного о себе...</h2>
+
+<form action="hw3.php" method="post">
+<fieldset>
+    <legend>Коротко о себе</legend>
+    <ul>
+        <li>
+            <label>
+                Имя:
+                <input class="namefamily" type="text" name="name"/>
+            </label>
+        </li>
+        <li>
+            <label>
+                Фамилия:
+                <input class="namefamily" type="text" name="surname"/>
+            </label>
+        </li>
+        <li>
+            <div class="pol"></div>
+            Пол:
+            <label>
+                <input class="radio" type="radio" name="sex" value="male" checked="checked"/>
+                мужской
+            </label>
+            <label>
+                <input class="radio" type="radio" name="sex" value="feemale"/>
+                женский
+            </label>
+        </li>
+        <li>
+            <div class="vozrast">
+                <label>
+                    Возраст:
+                    <input class="age" type="text" size="4"/>
+                    лет
+                </label>
+            </div>
+        </li>
+    </ul>
+</fieldset>
+<fieldset>
+    <legend>Подробнее о себе</legend>
+    <ul>
+        <li>
+            <label>
+                <input class="radio" type="radio" name="sex1" value="youngman" checked="checked"/>
+                Молодой человек
+            </label>
+        </li>
+        <li>
+            <label>
+                <input class="radio" type="radio" name="sex1" value="girl"/>
+                Девушка
+            </label>
+        </li>
+        <li>
+            <label>
+                <input class="osebe" type="text" name="birthday"/>
+                Дата рождения
+            </label>
+        </li>
+        <li>
+            <label>
+                <input class="osebe" type="text" name="family"/>
+                Семейное положение
+            </label>
+        </li>
+        <li>
+            <label>
+                <input class="osebe" type="text" name="status"/>
+                Социальный статус
+            </label>
+        </li>
+        <li>
+            <label>
+                <input class="osebe" type="text" name="home"/>
+                Местожительство
+            </label>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <p>
+                <b>
+                    Что вы обычно делаете на выходных:
+                </b>
+            </p>
+
+            <ul>
+                <li>
+                    <label>
+                        <input class="cbox" type="checkbox" name="weekend" value="sleep"/>
+                        Сплю
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input class="cbox" type="checkbox" name="weekend" value="friends"/>
+                        Гуляю с друзьями
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input class="cbox" type="checkbox" name="weekend" value="fishing"/>
+                        Хожу на рыбалку
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input class="cbox" type="checkbox" name="weekend" value="games"/>
+                        Играю в игры
+                    </label>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>
+                <b>
+                    Рассказать о формах в книге посвященной HTML:
+                </b>
+            </p>
+            <select class="menu1" name="forms">
+                <option value="frequency">Site frequency:</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </li>
+        <li>
+            <p>
+                <b>
+                    Сколько книг вы прочитали за свою жизнь:
+                </b>
+            </p>
+            <ul>
+                <li>
+                    <label>
+                        <input class="radio" type="radio" name="number" value="0-10"/>
+                        0-10
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input class="radio" type="radio" name="number" value="11-20"/>
+                        11-20
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input class="radio" type="radio" name="number" value="21-50"/>
+                        21-50
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input class="radio" type="radio" name="number" value="50+"/>
+                        50+
+                    </label>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p><label for="comments"><b>Ваши коментарии:</b></label></p>
+            <textarea class="komentarii" name="comments" id="comments" cols="30" rows="10"></textarea>
+        </li>
+        <li>
+            <select class="menu2" name="position" size="3" multiple="multiple">
+                <option value="1pos">Первая позиция</option>
+                <option value="2pos">Вторая позиция</option>
+                <option value="3pos">Третья позиция</option>
+            </select>
+        </li>
+    </ul>
+</fieldset>
+<fieldset>
+    <legend>И в заключении</legend>
+    <p>
+        <input class="vvedendovas" type="text" onblur="if (this.value==''){this.value='Это поле было введено до вас'}"
+               onfocus="if (this.value=='Это поле было введено до вас') this.value='';"
+               value="Это поле было введено до вас" size="40"/>
+    </p>
+
+    <p class="emailtext">
+            <label for="eml">
+                <b>Email:</b>
+            </label>
+    </p>
+    <p>
+        <input class="email" type="text" name="email" size="40" id="eml"/>
+    </p>
+
+    <ul>
+        <li>
+            <p>
+                <b>
+                    Хотите подписаться на самую модную рассылку спама?
+                </b>
+            </p>
+
+            <p class="kategorii">
+                <i>
+                    Выберите категории
+                </i>
+            </p>
+            <ul>
+                <li>
+                    <label>
+                        <input class="cbox" type="checkbox" name="spam" value="obor"/>
+                        Обoрудование
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input class="cbox" type="checkbox" name="spam" value="obed"/>
+                        Как приготовить обеды
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input class="cbox" type="checkbox" name="spam" value="million"/>
+                        Заработай миллион за два дня!
+                    </label>
+                </li>
+            </ul>
+
+        </li>
+        <li>
+            <p>
+                <b>На сколько сложная задача:</b>
+            </p>
+            <ul>
+                <li>
+                    <label>
+                        <input class="radio" type="radio" name="task" value="easy" checked="checked"/>
+                        Совсем нет
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input class="radio" type="radio" name="task" value="middle"/>
+                        Так себе
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input class="radio" type="radio" name="task" value="hard"/>
+                        Еле справились
+                    </label>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+</fieldset>
+<p><button type="submit">Отправить</button></p>
+</form>
+
+</body>
+</html>
