@@ -1,0 +1,136 @@
+﻿
+/////////////////////////lesson 23/////////////////////////////////////
+
+post type = тип материала (заказсобытие видео):
+post
+page
+
+attachments
+comments
+  posttype имеет title body
+  festured image
+  taxonomy = пример (category tags)
+  post meta (key name)
+  
+  
+  custome post type
+  custome taxonomy
+  
+  
+  создание темы:
+  состоит из файлов шаблонов
+  
+  
+  
+  loop
+  start
+  /////
+  end
+  
+  
+ wp_query - sql - DB - array - loop - single 
+ 
+
+query post
+reset 
+
++++++++++
+
+widgets
+виджет зона - создается в фанкшн пхп, в темплейте пишем в нужном месте "достать пхп"
+когда достаем виджет зону можем указать какой тег выводить прерд и после виджет зоны
+
+++++++
+
+меню/навигация
+primary nav
+wp_nav_admin
+
+
+домашнее задание:
+создать базовый темплейт с созданием лупа
+после основного лупа создать кастомный квери с выводом контента определенной страницы
+сделать в сайдбаре кастомную виджет зону и добавить виджеты + подключить плагин с виджетами
+testimonials
+
+
+
+
+/////////////////////////lesson 24////////////////////////////////////
+
+custom field
+
+создать метабокс нагуглить
+
+theme customization API позвволяет создавать секции в customize wpadmina:
+- section
+- setting
+- control
+
+
+get theme mod
+
+poediе
+htxs
+
+hook
+
+
+дз:
+использовать theme customization API
+перевод
+сделать childtheme
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
